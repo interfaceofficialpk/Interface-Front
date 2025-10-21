@@ -1,0 +1,9 @@
+.hero {
+  background-image: url("/hero-bg.jpg");
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-image: url("/hero-bg-mobile.jpg");
+  }
+}
