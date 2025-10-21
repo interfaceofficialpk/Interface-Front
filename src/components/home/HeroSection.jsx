@@ -1,13 +1,18 @@
 import { motion } from "framer-motion";
-import "./HeroSection.css";
 
 export default function HeroSection() {
   const words = ["Plan", "Interface", "Succeed"];
+  const isMobile = window.innerWidth <= 768;
+
+  const backgroundImageUrl = isMobile ? "/hero-bg-mobile.jpg" : "/hero-bg.jpg";
 
   return (
     <div
-      className="hero min-h-screen"
+      className="min-h-screen"
       style={{
+        backgroundImage: `url(${backgroundImageUrl})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
         maskImage:
           "linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0))",
         WebkitMaskImage:
