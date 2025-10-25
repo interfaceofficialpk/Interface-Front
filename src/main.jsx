@@ -5,6 +5,8 @@ import App from "./App.jsx";
 import { BrowserRouter, Routes } from "react-router-dom";
 import { AuthProvider } from "./contexts/AuthContext.jsx";
 
+// for trigger redeploy
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
